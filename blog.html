@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - Tech Solutions</title>
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+    <!-- Blog specific CSS -->
+    <link href="blog-styles.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Custom styles for tech company theme */
+        .navbar {
+            background-color: #1a1a2e;
+        }
+        
+        .logo-circle {
+            background-color: #0f3460;
+        }
+        
+        .become-member {
+            background-color: #16213e;
+        }
+        
+        /* AMOLED Footer with scrolling text */
+        .amoled-footer {
+            background-color: #000000; /* True AMOLED black */
+            color: white;
+            padding: 30px 0 20px;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .scrolling-text-container {
+            width: 100%;
+            overflow: hidden;
+            margin: 20px 0;
+            padding: 10px 0;
+            background-color: #0f0f0f;
+            position: relative;
+        }
+        
+        .scrolling-text {
+            white-space: nowrap;
+            animation: scrollText 20s linear infinite;
+            color: #4cc9f0;
+            font-size: 18px;
+            padding: 10px 0;
+        }
+        
+        @keyframes scrollText {
+            0% {
+                transform: translateX(100%);
+            }
+            100% {
+                transform: translateX(-100%);
+            }
+        }
+        
+        .contact-links a {
+            color: #4cc9f0;
+            margin: 0 15px;
+            transition: color 0.3s;
+            text-decoration: none;
+        }
+        
+        .contact-links a:hover {
+            color: #f72585;
+        }
+        
+        .copyright-text {
+            color: #8d99ae;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <div class="logo-circle">
+                    <i class="fas fa-microchip"></i>
+                </div>
+                TECH SOLUTIONS
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sign in</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link become-member" href="#">Request Service</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Welcome Section -->
+    <div class="welcome-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 welcome-text">
+                    <div class="welcome-content">
+                        <div class="diagonal-lines"></div>
+                        <h1 class="welcome-heading">TECH<br>EXPERTISE</h1>
+                        <p class="welcome-paragraph">
+                            At Tech Solutions, we specialize in providing comprehensive IT services 
+                            tailored to meet your technological needs. Our team of expert 
+                            technicians delivers top-notch computer troubleshooting, software 
+                            installation, and IT consultancy. With years of experience in the 
+                            industry, we ensure that your technology works for you, not against you.
+                        </p>
+                        <div class="executive-info">
+                            <h3 class="executive-name">Seth N Chenge</h3>
+                            <p class="executive-title">Chief Executive Officer</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6 welcome-image">
+                    <div class="image-container">
+                        <img src="ceo.jpeg" alt="CTO Portrait" class="executive-portrait">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blog Content Section -->
+    <div class="blog-content-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8">
+                    <h2 class="section-title">Latest Tech Articles</h2>
+                    <div class="blog-post">
+                        <h3>Essential Software Every Business Should Have</h3>
+                        <p class="post-meta">Posted on April 7, 2025</p>
+                        <p>Discover the key software applications that can streamline your business operations and boost productivity.</p>
+                        <a href="#" class="read-more">Continue Reading</a>
+                    </div>
+                    <div class="blog-post">
+                        <h3>Common Computer Issues and How to Fix Them</h3>
+                        <p class="post-meta">Posted on April 5, 2025</p>
+                        <p>Learn how to diagnose and resolve the most frequent computer problems that businesses encounter.</p>
+                        <a href="#" class="read-more">Continue Reading</a>
+                    </div>
+                    <div class="blog-post">
+                        <h3>Cybersecurity Best Practices for Small Businesses</h3>
+                        <p class="post-meta">Posted on April 3, 2025</p>
+                        <p>Explore essential security measures to protect your business from cyber threats and data breaches.</p>
+                        <a href="#" class="read-more">Continue Reading</a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="sidebar">
+                        <h3 class="sidebar-title">Categories</h3>
+                        <ul class="category-list">
+                            <li><a href="#">Troubleshooting</a></li>
+                            <li><a href="#">Software</a></li>
+                            <li><a href="#">Cybersecurity</a></li>
+                            <li><a href="#">Hardware</a></li>
+                            <li><a href="#">Cloud Solutions</a></li>
+                        </ul>
+                        <h3 class="sidebar-title">Subscribe</h3>
+                        <form class="subscribe-form">
+                            <div class="mb-3">
+                                <input type="email" class="form-control" placeholder="Your Email Address">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Subscribe</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- AMOLED Footer with scrolling text -->
+    <footer class="amoled-footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3>About Tech Solutions</h3>
+                    <p>We specialize in computer troubleshooting, software installation, and comprehensive IT solutions for businesses and individuals.</p>
+                </div>
+                <div class="col-md-4">
+                    <h3>Our Services</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Computer Repair</a></li>
+                        <li><a href="#">Software Installation</a></li>
+                        <li><a href="#">Network Setup</a></li>
+                        <li><a href="#">IT Consultancy</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h3>Connect With Us</h3>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-github"></i></a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Scrolling text with contact links -->
+            <div class="scrolling-text-container">
+                <div class="scrolling-text">
+                    NEED TECH SUPPORT? CONTACT US NOW: 
+                    <span class="contact-links">
+                        <a href="tel:+1234567890"><i class="fas fa-phone"></i> (123) 456-7890</a>
+                        <a href="mailto:support@techsolutions.com"><i class="fas fa-envelope"></i> support@techsolutions.com</a>
+                        <a href="#"><i class="fas fa-map-marker-alt"></i> 123 Tech Street, Digital City</a>
+                        <a href="#"><i class="fas fa-headset"></i> 24/7 Live Chat Support</a>
+                    </span>
+                    — FAST & RELIABLE IT SERVICES —
+                </div>
+            </div>
+            
+            <hr>
+            <div class="row">
+                <div class="col-md-12">
+                    <p class="copyright-text">© 2025 Tech Solutions. All Rights Reserved.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5.3 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="blog-script.js"></script>
+</body>
+</html>

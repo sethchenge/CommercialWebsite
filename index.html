@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tech Services Website</title>
+    <!-- Bootstrap 5.3 CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link href="styles.css" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* Custom styles */
+        :root {
+            --primary-color: #1e88e5;
+            --secondary-color: #0d47a1;
+            --accent-color: #42a5f5;
+            --text-color: #333;
+            --light-color: #f5f5f5;
+        }
+        
+        body {
+            font-family: 'Roboto', sans-serif;
+            color: var(--text-color);
+        }
+        
+        .navbar {
+            background-color: var(--primary-color);
+            padding: 15px 0;
+        }
+        
+        .navbar-brand {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            color: white;
+        }
+        
+        .logo-circle {
+            background-color: white;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 10px;
+        }
+        
+        .logo-circle i {
+            color: var(--primary-color);
+        }
+        
+        .nav-link {
+            color: rgba(255, 255, 255, 0.8) !important;
+            margin: 0 5px;
+            transition: all 0.3s ease;
+        }
+        
+        .nav-link:hover, .nav-link.active {
+            color: white !important;
+        }
+        
+        .request-service {
+            background-color: white;
+            color: var(--primary-color) !important;
+            border-radius: 20px;
+            padding: 8px 20px !important;
+            font-weight: bold;
+        }
+        
+        .hero-section {
+            background-color: #f8f9fa;
+            padding: 80px 0;
+        }
+        
+        .text-column h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: var(--primary-color);
+        }
+        
+        .text-column p {
+            font-size: 1.2rem;
+            margin-bottom: 30px;
+            color: #666;
+        }
+        
+        .get-started-btn {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-weight: bold;
+            border: none;
+            transition: all 0.3s ease;
+        }
+        
+        .get-started-btn:hover {
+            background-color: var(--secondary-color);
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        }
+        
+        .video-container {
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+        }
+        
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%; /* 16:9 ratio */
+            height: 0;
+        }
+        
+        .video-wrapper iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 15px;
+        }
+        
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80px;
+            height: 80px;
+            background-color: var(--primary-color);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            z-index: 10;
+            transition: all 0.3s ease;
+        }
+        
+        .play-button i {
+            color: white;
+            font-size: 30px;
+            margin-left: 5px;
+        }
+        
+        .play-button:hover {
+            background-color: var(--secondary-color);
+            transform: translate(-50%, -50%) scale(1.1);
+        }
+        
+        /* Footer styles */
+        footer {
+            background-color: #1a1a1a;
+            color: white;
+            padding: 50px 0 20px;
+        }
+        
+        .footer-logo {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        
+        .footer-links h5 {
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: var(--accent-color);
+        }
+        
+        .footer-links ul {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .footer-links li {
+            margin-bottom: 10px;
+        }
+        
+        .footer-links a {
+            color: rgba(255, 255, 255, 0.8);
+            text-decoration: none;
+            transition: all 0.3s;
+        }
+        
+        .footer-links a:hover {
+            color: white;
+            text-decoration: underline;
+        }
+        
+        .copyright {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: 20px;
+            margin-top: 30px;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.6);
+        }
+        
+        /* Scrolling text */
+        .scrolling-text-container {
+            background-color: var(--primary-color);
+            overflow: hidden;
+            padding: 10px 0;
+        }
+        
+        .scrolling-text {
+            white-space: nowrap;
+            animation: scroll 30s linear infinite;
+            color: white;
+            font-weight: 500;
+        }
+        
+        @keyframes scroll {
+            0% { transform: translateX(100%); }
+            100% { transform: translateX(-100%); }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <div class="logo-circle">
+                    <i class="fas fa-microchip"></i>
+                </div>
+                TECH SOLUTIONS
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Services</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Sign in</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link request-service" href="#">Request Service</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="hero-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 text-column">
+                    <h1>INNOVATIVE<br>TECH SOLUTIONS</h1>
+                    <p>Professional technology services to boost your business. Our experts deliver cutting-edge solutions tailored to your specific needs.</p>
+                    <button class="btn get-started-btn">GET STARTED</button>
+                </div>
+                <div class="col-lg-7 video-column">
+                    <div class="video-container">
+                        <!-- YouTube video iframe -->
+                        <div class="video-wrapper">
+                            <iframe id="youtube-video" src="https://www.youtube.com/embed/NpmhpJF1LxU?enablejsapi=1" title="Tech Solutions Video" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                            <div class="play-button" id="custom-play-button">
+                                <i class="fas fa-play"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+   <!-- Carousel Section -->
+   <div class="carousel-section" data-aos="zoom-in" data-aos-duration="1000">
+    <div class="container">
+        <h2 class="section-title text-center mb-5">Our Clients Trust Us</h2>
+        <div id="testimonialCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                <button type="button" data-bs-target="#testimonialCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="testimonial-slide">
+                        <div class="client-logo">
+                            <img src="/api/placeholder/120/60" alt="Client 1" class="img-fluid">
+                        </div>
+                        <div class="testimonial-content">
+                            <p>"Tech Solutions completely transformed our IT infrastructure. Their cloud migration services saved us 40% in operating costs while improving performance."</p>
+                            <div class="client-info">
+                                <h5>Sarah Johnson</h5>
+                                <p>CTO, GlobalTech Inc.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="testimonial-slide">
+                        <div class="client-logo">
+                            <img src="/api/placeholder/120/60" alt="Client 2" class="img-fluid">
+                        </div>
+                        <div class="testimonial-content">
+                            <p>"The cybersecurity audit performed by Tech Solutions identified critical vulnerabilities we had missed for years. Their swift response prevented what could have been a devastating breach."</p>
+                            <div class="client-info">
+                                <h5>Michael Rodriguez</h5>
+                                <p>Security Director, Financial Systems Ltd.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="testimonial-slide">
+                        <div class="client-logo">
+                            <img src="/api/placeholder/120/60" alt="Client 3" class="img-fluid">
+                        </div>
+                        <div class="testimonial-content">
+                            <p>"Their custom software development team built exactly what we needed when off-the-shelf solutions were falling short. The ROI was evident within just 3 months."</p>
+                            <div class="client-info">
+                                <h5>Jennifer Lee</h5>
+                                <p>Operations Manager, InnovateCorp</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="testimonial-slide">
+                        <div class="client-logo">
+                            <img src="/api/placeholder/120/60" alt="Client 4" class="img-fluid">
+                        </div>
+                        <div class="testimonial-content">
+                            <p>"When our e-commerce platform crashed during our biggest sale of the year, Tech Solutions had us back online in under 30 minutes. Their emergency support is unmatched in the industry."</p>
+                            <div class="client-info">
+                                <h5>David Wilson</h5>
+                                <p>E-Commerce Director, ShopRight</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="testimonial-slide">
+                        <div class="client-logo">
+                            <img src="/api/placeholder/120/60" alt="Client 5" class="img-fluid">
+                        </div>
+                        <div class="testimonial-content">
+                            <p>"As a small business, we thought enterprise-level IT solutions were out of reach. Tech Solutions provided affordable, scalable services that have helped us grow our business by 200% in just one year."</p>
+                            <div class="client-info">
+                                <h5>Amanda Patel</h5>
+                                <p>Founder, StartUp Solutions</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#testimonialCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+</div>
+
+<!-- Services Section -->
+<div id="services" class="services-section">
+    <div class="container">
+        <h2 class="section-title text-center mb-5" data-aos="fade-up">Our Services</h2>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <h3>Cloud Solutions</h3>
+                    <p>Seamlessly migrate your business to the cloud with our comprehensive migration services, cloud-native application development, and ongoing management.</p>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>Cybersecurity</h3>
+                    <p>Protect your business with advanced threat detection, vulnerability assessments, security audits, and comprehensive cybersecurity training for your team.</p>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <h3>Software Development</h3>
+                    <p>Custom software solutions designed specifically for your business needs, from web applications and mobile apps to enterprise software and integrations.</p>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h3>IT Consulting</h3>
+                    <p>Strategic technology guidance to align your IT initiatives with business goals. Our consultants help optimize processes, reduce costs, and drive innovation.</p>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="500">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-network-wired"></i>
+                    </div>
+                    <h3>Network Infrastructure</h3>
+                    <p>Design, implementation, and management of robust network solutions that ensure seamless connectivity, scalability, and performance for your business.</p>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="600">
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-headset"></i>
+                    </div>
+                    <h3>24/7 IT Support</h3>
+                    <p>Round-the-clock technical support to resolve issues quickly and efficiently. Our dedicated team ensures minimal downtime and maximum productivity.</p>
+                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 mb-4">
+                    <div class="footer-logo">
+                        <div class="logo-circle">
+                            <i class="fas fa-microchip"></i>
+                        </div>
+                        <h4 class="ms-2 mb-0">TECH SOLUTIONS</h4>
+                    </div>
+                    <p>Providing innovative technology services and solutions for businesses of all sizes. Our team of experts is dedicated to helping you succeed in the digital world.</p>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 footer-links">
+                    <h5>Services</h5>
+                    <ul>
+                        <li><a href="#">IT Consulting</a></li>
+                        <li><a href="#">Cloud Solutions</a></li>
+                        <li><a href="#">Cybersecurity</a></li>
+                        <li><a href="#">Software Development</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 footer-links">
+                    <h5>Company</h5>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Team</a></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 footer-links">
+                    <h5>Support</h5>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Resources</a></li>
+                        <li><a href="#">Status</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4 mb-4 footer-links">
+                    <h5>Legal</h5>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Scrolling Text -->
+            <div class="scrolling-text-container mt-4 mb-4">
+                <div class="scrolling-text">
+                    24/7 TECH SUPPORT AVAILABLE | CERTIFIED IT PROFESSIONALS | SAME-DAY SERVICE FOR EMERGENCIES | FREE CONSULTATION FOR NEW CLIENTS | OVER 500+ SATISFIED BUSINESSES
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 Tech Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5.3 JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- YouTube API -->
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <!-- Custom JavaScript -->
+    <script>
+        // YouTube video control
+        let player;
+        const customPlayButton = document.getElementById('custom-play-button');
+        
+        function onYouTubeIframeAPIReady() {
+            player = new YT.Player('youtube-video', {
+                events: {
+                    'onStateChange': onPlayerStateChange
+                }
+            });
+        }
+        
+        function onPlayerStateChange(event) {
+            if (event.data === YT.PlayerState.PLAYING) {
+                customPlayButton.style.opacity = '0';
+            } else {
+                customPlayButton.style.opacity = '1';
+            }
+        }
+        
+        customPlayButton.addEventListener('click', function() {
+            player.playVideo();
+        });
+    </script>
+</body>
+</html>
