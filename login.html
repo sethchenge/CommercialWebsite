@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Designer Maryam</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="login.css">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <div class="row">
+                <!-- Left Panel - Login Form -->
+                <div class="col-md-6">
+                    <div class="login-panel">
+                        <div class="designer-name">Designer Maryam</div>
+                        <h2 class="login-title">Log in</h2>
+                        
+                        <!-- Facebook Button -->
+                        <div class="social-login">
+                            <button class="btn facebook-btn">
+                                <i class="fab fa-facebook-f"></i> Facebook
+                            </button>
+                        </div>
+                        
+                        <!-- Login Form -->
+                        <form id="loginForm">
+                            <div class="form-group">
+                                <input type="email" id="email" class="form-control" placeholder="e-mail address" required>
+                                <div class="invalid-feedback">Please enter a valid email address</div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <input type="password" id="password" class="form-control" placeholder="password" required>
+                                <div class="invalid-feedback">Password is required</div>
+                            </div>
+                            
+                            <div class="form-text">Please consume responsibly.</div>
+                            
+                            <button type="submit" class="btn submit-btn">
+                                <i class="fas fa-arrow-right"></i>
+                            </button>
+                        </form>
+                        
+                        <!-- Sign Up Link -->
+                        <div class="signup-link">
+                            <a href="#" class="btn signup-btn">Sign up</a>
+                        </div>
+                    </div>
+                    
+                    <!-- New In Section -->
+                    <div class="new-in-panel">
+                        <h2>New in</h2>
+                        <p>Designer Maryam</p>
+                    </div>
+                </div>
+                
+                <!-- Right Panel - Event Card -->
+                <div class="col-md-6">
+                    <div class="event-panel">
+                        <div class="event-date">
+                            <h2>Wed</h2>
+                            <h1>17th</h1>
+                        </div>
+                        
+                        <div class="event-details">
+                            <p class="event-time">18 PM</p>
+                            <p class="event-location">Oxford Street</p>
+                            <p class="event-city">London</p>
+                        </div>
+                        
+                        <div class="event-info">
+                            <p>Grand opening</p>
+                            <p>New store</p>
+                        </div>
+                        
+                        <div class="designer-logo">
+                            <i class="fas fa-heart"></i>
+                            <span>Designer Maryam</span>
+                        </div>
+                        
+                        <div class="join-btn-container">
+                            <button class="btn join-btn">Join in</button>
+                        </div>
+                        
+                        <!-- Blue Circle Decoration -->
+                        <div class="blue-circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="login.js"></script>
+</body>
+</html>

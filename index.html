@@ -229,42 +229,80 @@
                 <div class="logo-circle">
                     <i class="fas fa-microchip"></i>
                 </div>
-                TECH SOLUTIONS
+                EDGETECH COMPANY
             </a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link active" href="#">Home</a>
+                <div class="sidebar-close-btn d-lg-none">
+                    <button type="button" class="btn-close btn-close-white" aria-label="Close"></button>
+                </div>
+                <ul class="navbar-nav">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="productDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Product
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="productDropdown">
+                            <div class="dropdown-item-group">
+                                <div class="dropdown-icon">
+                                    <i class="fas fa-robot"></i>
+                                </div>
+                                <div class="dropdown-content">
+                                    <a class="dropdown-item-title" href="#">Tech AI Assistant</a>
+                                    <p class="dropdown-item-desc">Write better code with AI</p>
+                                </div>
+                            </div>
+                            <div class="dropdown-item-group">
+                                <div class="dropdown-icon">
+                                    <i class="fas fa-shield-alt"></i>
+                                </div>
+                                <div class="dropdown-content">
+                                    <a class="dropdown-item-title" href="#">Advanced Security</a>
+                                    <p class="dropdown-item-desc">Find and fix vulnerabilities</p>
+                                </div>
+                            </div>
+                            <div class="dropdown-item-group">
+                                <div class="dropdown-icon">
+                                    <i class="fas fa-cogs"></i>
+                                </div>
+                                <div class="dropdown-content">
+                                    <a class="dropdown-item-title" href="#">Automations</a>
+                                    <p class="dropdown-item-desc">Automate any workflow</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="solutionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Solutions
+                        </a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="resourcesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Resources
+                        </a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Services</a>
+                        <a class="nav-link" href="#">Support</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="blog.html">Blog</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Sign in</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link request-service" href="#">Request Service</a>
+                        <a class="nav-link" href="#">Pricing</a>
                     </li>
                 </ul>
+                <div class="navbar-right ms-auto">
+                    <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#loginModal">Sign Up</a>
+                    <a href="#services-section" class="btn btn-link">Get Started</a>
+                </div>
             </div>
         </div>
     </nav>
-
     <!-- Hero Section -->
     <div class="hero-section">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-5 text-column">
-                    <h1>INNOVATIVE<br>TECH SOLUTIONS</h1>
+                    <h2>EDGETECH COMPANY</h2>
                     <p>Professional technology services to boost your business. Our experts deliver cutting-edge solutions tailored to your specific needs.</p>
                     <button class="btn get-started-btn">GET STARTED</button>
                 </div>
@@ -300,7 +338,7 @@
                 <div class="carousel-item active">
                     <div class="testimonial-slide">
                         <div class="client-logo">
-                            <img src="/api/placeholder/120/60" alt="Client 1" class="img-fluid">
+                            <img src="ceo.jpeg" alt="Client 1" class="img-fluid">
                         </div>
                         <div class="testimonial-content">
                             <p>"Tech Solutions completely transformed our IT infrastructure. Their cloud migration services saved us 40% in operating costs while improving performance."</p>
@@ -314,12 +352,12 @@
                 <div class="carousel-item">
                     <div class="testimonial-slide">
                         <div class="client-logo">
-                            <img src="/api/placeholder/120/60" alt="Client 2" class="img-fluid">
+                            <img src="ceo.jpeg" alt="Client 2" class="img-fluid">
                         </div>
                         <div class="testimonial-content">
                             <p>"The cybersecurity audit performed by Tech Solutions identified critical vulnerabilities we had missed for years. Their swift response prevented what could have been a devastating breach."</p>
                             <div class="client-info">
-                                <h5>Michael Rodriguez</h5>
+                                <h5>Seth Chenge</h5>
                                 <p>Security Director, Financial Systems Ltd.</p>
                             </div>
                         </div>
@@ -328,12 +366,12 @@
                 <div class="carousel-item">
                     <div class="testimonial-slide">
                         <div class="client-logo">
-                            <img src="/api/placeholder/120/60" alt="Client 3" class="img-fluid">
+                            <img src="ceo.jpeg" alt="Client 3" class="img-fluid">
                         </div>
                         <div class="testimonial-content">
                             <p>"Their custom software development team built exactly what we needed when off-the-shelf solutions were falling short. The ROI was evident within just 3 months."</p>
                             <div class="client-info">
-                                <h5>Jennifer Lee</h5>
+                                <h5>Seth Chenge</h5>
                                 <p>Operations Manager, InnovateCorp</p>
                             </div>
                         </div>
@@ -342,12 +380,12 @@
                 <div class="carousel-item">
                     <div class="testimonial-slide">
                         <div class="client-logo">
-                            <img src="/api/placeholder/120/60" alt="Client 4" class="img-fluid">
+                            <img src="ceo.jpeg" alt="Client 4" class="img-fluid">
                         </div>
                         <div class="testimonial-content">
                             <p>"When our e-commerce platform crashed during our biggest sale of the year, Tech Solutions had us back online in under 30 minutes. Their emergency support is unmatched in the industry."</p>
                             <div class="client-info">
-                                <h5>David Wilson</h5>
+                                <h5>Seth Chenge</h5>
                                 <p>E-Commerce Director, ShopRight</p>
                             </div>
                         </div>
@@ -356,12 +394,12 @@
                 <div class="carousel-item">
                     <div class="testimonial-slide">
                         <div class="client-logo">
-                            <img src="/api/placeholder/120/60" alt="Client 5" class="img-fluid">
+                            <img src="ceo.jpeg" alt="Client 5" class="img-fluid">
                         </div>
                         <div class="testimonial-content">
                             <p>"As a small business, we thought enterprise-level IT solutions were out of reach. Tech Solutions provided affordable, scalable services that have helped us grow our business by 200% in just one year."</p>
                             <div class="client-info">
-                                <h5>Amanda Patel</h5>
+                                <h5>Seth Chenge</h5>
                                 <p>Founder, StartUp Solutions</p>
                             </div>
                         </div>
@@ -381,73 +419,398 @@
 </div>
 
 <!-- Services Section -->
-<div id="services" class="services-section">
+<section id="services-section" class="services-section py-5">
     <div class="container">
-        <h2 class="section-title text-center mb-5" data-aos="fade-up">Our Services</h2>
-        <div class="row">
-            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="100">
+        <h2 class="text-center mb-5">Our Services</h2>
+        
+        <div class="row g-4">
+            <!-- Cloud Solutions -->
+            <div class="col-md-4">
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-cloud"></i>
-                    </div>
+                    <div class="icon-container">
+                        <i class="fas fa-cloud service-icon"></i>
+                      </div>
                     <h3>Cloud Solutions</h3>
                     <p>Seamlessly migrate your business to the cloud with our comprehensive migration services, cloud-native application development, and ongoing management.</p>
-                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    <button class="btn btn-link learn-more" data-bs-toggle="modal" data-bs-target="#cloudModal">
+                        Learn More <span class="arrow">→</span>
+                    </button>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="200">
+
+            <!-- Cybersecurity -->
+            <div class="col-md-4">
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-shield-alt"></i>
-                    </div>
+                    <div class="icon-container">
+                        <i class="fas fa-shield-alt service-icon"></i>
+                      </div>
                     <h3>Cybersecurity</h3>
                     <p>Protect your business with advanced threat detection, vulnerability assessments, security audits, and comprehensive cybersecurity training for your team.</p>
-                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    <button class="btn btn-link learn-more" data-bs-toggle="modal" data-bs-target="#securityModal">
+                        Learn More <span class="arrow">→</span>
+                    </button>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="300">
+
+            <!-- Software Development -->
+            <div class="col-md-4">
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-code"></i>
-                    </div>
+                    <div class="icon-container">
+                        <i class="fas fa-code service-icon"></i>
+                      </div>
                     <h3>Software Development</h3>
                     <p>Custom software solutions designed specifically for your business needs, from web applications and mobile apps to enterprise software and integrations.</p>
-                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    <button class="btn btn-link learn-more" data-bs-toggle="modal" data-bs-target="#softwareModal">
+                        Learn More <span class="arrow">→</span>
+                    </button>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="400">
+
+            <!-- IT Consulting -->
+            <div class="col-md-4">
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-laptop-code"></i>
-                    </div>
+                    <div class="icon-container">
+                        <i class="fas fa-laptop-code service-icon"></i>
+                      </div>
                     <h3>IT Consulting</h3>
                     <p>Strategic technology guidance to align your IT initiatives with business goals. Our consultants help optimize processes, reduce costs, and drive innovation.</p>
-                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    <button class="btn btn-link learn-more" data-bs-toggle="modal" data-bs-target="#consultingModal">
+                        Learn More <span class="arrow">→</span>
+                    </button>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="500">
+
+            <!-- Network Infrastructure -->
+            <div class="col-md-4">
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-network-wired"></i>
-                    </div>
+                    <div class="icon-container">
+                        <i class="fas fa-network-wired service-icon"></i>
+                      </div>
                     <h3>Network Infrastructure</h3>
                     <p>Design, implementation, and management of robust network solutions that ensure seamless connectivity, scalability, and performance for your business.</p>
-                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    <button class="btn btn-link learn-more" data-bs-toggle="modal" data-bs-target="#networkModal">
+                        Learn More <span class="arrow">→</span>
+                    </button>
                 </div>
             </div>
-            <div class="col-lg-4 col-md-6 mb-4" data-aos="fade-up" data-aos-delay="600">
+
+            <!-- 24/7 IT Support -->
+            <div class="col-md-4">
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="fas fa-headset"></i>
-                    </div>
+                    <div class="icon-container">
+                        <i class="fas fa-headset service-icon"></i>
+                      </div>
                     <h3>24/7 IT Support</h3>
                     <p>Round-the-clock technical support to resolve issues quickly and efficiently. Our dedicated team ensures minimal downtime and maximum productivity.</p>
-                    <a href="#" class="service-link">Learn More <i class="fas fa-arrow-right"></i></a>
+                    <button class="btn btn-link learn-more" data-bs-toggle="modal" data-bs-target="#supportModal">
+                        Learn More <span class="arrow">→</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Modal for Cloud Solutions -->
+<div class="modal fade" id="cloudModal" tabindex="-1" aria-labelledby="cloudModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="cloudModalLabel">Cloud Solutions</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/JIbIYCM48to" title="Cloud Solutions" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="content-container">
+                            <h4>Comprehensive Cloud Solutions</h4>
+                            <p>Our cloud solutions empower your business with scalable infrastructure, enhanced security, and cost-effective operations. We offer:</p>
+                            <ul>
+                                <li><strong>Cloud Migration:</strong> Seamless transition of your existing systems and data to the cloud</li>
+                                <li><strong>Cloud-Native Development:</strong> Building applications optimized for cloud environments</li>
+                                <li><strong>Multi-Cloud Strategy:</strong> Leveraging the best of AWS, Azure, Google Cloud and more</li>
+                                <li><strong>Cloud Security:</strong> Implementing robust security measures for your cloud infrastructure</li>
+                                <li><strong>Cost Optimization:</strong> Ensuring you get maximum value from your cloud investment</li>
+                            </ul>
+                            <p>Our team of certified cloud experts will work with you to design and implement the perfect cloud solution for your specific business needs.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 </div>
+
+<!-- Modal for Cybersecurity -->
+<div class="modal fade" id="securityModal" tabindex="-1" aria-labelledby="securityModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="securityModalLabel">Cybersecurity</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/inWWhr5tnEA" title="Cybersecurity" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="content-container">
+                            <h4>Advanced Cybersecurity Services</h4>
+                            <p>In today's digital landscape, cybersecurity is more important than ever. Our comprehensive security services include:</p>
+                            <ul>
+                                <li><strong>Threat Detection & Response:</strong> Real-time monitoring and swift action against security threats</li>
+                                <li><strong>Vulnerability Assessments:</strong> Identifying and addressing weaknesses in your systems</li>
+                                <li><strong>Security Audits:</strong> Comprehensive evaluations of your security posture</li>
+                                <li><strong>Compliance Management:</strong> Ensuring adherence to industry regulations and standards</li>
+                                <li><strong>Security Training:</strong> Equipping your team with knowledge to prevent security breaches</li>
+                            </ul>
+                            <p>Our security experts use the latest tools and methodologies to protect your valuable data and digital assets from ever-evolving threats.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Software Development -->
+<div class="modal fade" id="softwareModal" tabindex="-1" aria-labelledby="softwareModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="softwareModalLabel">Software Development</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/9vJRopau0g0" title="Software Development" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="content-container">
+                            <h4>Custom Software Solutions</h4>
+                            <p>We design and develop tailored software solutions that address your unique business challenges and opportunities:</p>
+                            <ul>
+                                <li><strong>Web Applications:</strong> Powerful, scalable applications accessible from any browser</li>
+                                <li><strong>Mobile Development:</strong> Native and cross-platform mobile apps for iOS and Android</li>
+                                <li><strong>Enterprise Software:</strong> Comprehensive solutions for complex business operations</li>
+                                <li><strong>API Development:</strong> Creating and integrating APIs for seamless system connectivity</li>
+                                <li><strong>Legacy System Modernization:</strong> Updating outdated systems with modern technologies</li>
+                            </ul>
+                            <p>Our agile development approach ensures high-quality deliverables that meet your timeline and budget requirements, with ongoing support and maintenance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for IT Consulting -->
+<div class="modal fade" id="consultingModal" tabindex="-1" aria-labelledby="consultingModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="consultingModalLabel">IT Consulting</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/fvUdLNteo8Q" title="IT Consulting" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="content-container">
+                            <h4>Strategic Technology Guidance</h4>
+                            <p>Our IT consulting services help organizations align technology with business objectives to drive growth and efficiency:</p>
+                            <ul>
+                                <li><strong>IT Strategy Development:</strong> Creating roadmaps that support your business goals</li>
+                                <li><strong>Process Optimization:</strong> Streamlining workflows and eliminating inefficiencies</li>
+                                <li><strong>Digital Transformation:</strong> Guiding your organization through technological change</li>
+                                <li><strong>IT Assessment:</strong> Evaluating your current systems and identifying improvement opportunities</li>
+                                <li><strong>Technology Selection:</strong> Helping you choose the right tools and platforms for your needs</li>
+                            </ul>
+                            <p>Our experienced consultants bring industry-specific knowledge and best practices to help your business thrive in the digital age.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for Network Infrastructure -->
+<div class="modal fade" id="networkModal" tabindex="-1" aria-labelledby="networkModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="networkModalLabel">Network Infrastructure</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/6_X-OXfuG1Y" title="Network Infrastructure" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="content-container">
+                            <h4>Robust Network Solutions</h4>
+                            <p>Our network infrastructure services provide the foundation for reliable, secure, and high-performance business operations:</p>
+                            <ul>
+                                <li><strong>Network Design:</strong> Architecting optimal network solutions for your specific needs</li>
+                                <li><strong>Implementation:</strong> Expert deployment of network hardware and software</li>
+                                <li><strong>Network Management:</strong> Proactive monitoring and maintenance for optimal performance</li>
+                                <li><strong>Wireless Solutions:</strong> Secure and reliable WiFi networks for your facilities</li>
+                                <li><strong>SD-WAN:</strong> Software-defined wide area networking for improved connectivity</li>
+                            </ul>
+                            <p>We ensure your network infrastructure can support your business operations today while being adaptable to future needs and technologies.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal for 24/7 IT Support -->
+<div class="modal fade" id="supportModal" tabindex="-1" aria-labelledby="supportModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="supportModalLabel">24/7 IT Support</h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="video-container">
+                            <iframe width="560" height="315" src="https://www.youtube.com/embed/qwQoYhSnWlU" title="24/7 IT Support" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="content-container">
+                            <h4>Round-the-Clock Technical Support</h4>
+                            <p>Our 24/7 IT support services ensure your business operations continue without disruption:</p>
+                            <ul>
+                                <li><strong>Help Desk Support:</strong> Immediate assistance for user-facing issues</li>
+                                <li><strong>System Monitoring:</strong> Continuous monitoring of your critical systems</li>
+                                <li><strong>Incident Response:</strong> Rapid resolution of technical emergencies</li>
+                                <li><strong>Preventative Maintenance:</strong> Proactive service to prevent issues before they occur</li>
+                                <li><strong>Remote Support:</strong> Efficient problem-solving without on-site visits when possible</li>
+                            </ul>
+                            <p>With multiple support tiers and flexible SLAs, we provide the level of service your business needs to maintain productivity and minimize downtime.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Login Modal -->
+<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content login-form-container">
+      <div class="modal-body p-4">
+        <div class="text-center mb-4">
+          <div class="logo-container">
+            <div class="logo-circle">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" width="32" height="32">
+                <path d="M13.5 4.06c0-1.336-1.616-2.005-2.56-1.06l-4.5 4.5H4.508c-1.141 0-2.318.664-2.66 1.905A9.76 9.76 0 001.5 12c0 .898.121 1.768.35 2.595.341 1.24 1.518 1.905 2.659 1.905h1.93l4.5 4.5c.945.945 2.561.276 2.561-1.06V4.06zM17.78 9.22a.75.75 0 10-1.06 1.06L18.44 12l-1.72 1.72a.75.75 0 001.06 1.06l1.72-1.72 1.72 1.72a.75.75 0 101.06-1.06L20.56 12l1.72-1.72a.75.75 0 00-1.06-1.06l-1.72 1.72-1.72-1.72z"></path>
+              </svg>
+            </div>
+          </div>
+          <h4 class="mt-3">Welcome back</h4>
+          <p class="text-muted">Please enter your details to sign in.</p>
+        </div>
+
+        <div class="login-options mb-4">
+          <button class="btn btn-outline-secondary w-100 social-btn" id="appleLogin">
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z"/>
+              <path d="M11.182.008C11.148-.03 9.923.023 8.857 1.18c-1.066 1.156-.902 2.482-.878 2.516.024.034 1.52.087 2.475-1.258.955-1.345.762-2.391.728-2.43Zm3.314 11.733c-.048-.096-2.325-1.234-2.113-3.422.212-2.189 1.675-2.789 1.698-2.854.023-.065-.597-.79-1.254-1.157a3.692 3.692 0 0 0-1.563-.434c-.108-.003-.483-.095-1.254.116-.508.139-1.653.589-1.968.607-.316.018-1.256-.522-2.267-.665-.647-.125-1.333.131-1.824.328-.49.196-1.422.754-2.074 2.237-.652 1.482-.311 3.83-.067 4.56.244.729.625 1.924 1.273 2.796.576.984 1.34 1.667 1.659 1.899.319.232 1.219.386 1.843.067.502-.308 1.408-.485 1.766-.472.357.013 1.061.154 1.782.539.571.197 1.111.115 1.652-.105.541-.221 1.324-1.059 2.238-2.758.347-.79.505-1.217.473-1.282Z"/>
+            </svg>
+            <span class="ms-2">Sign in with Apple</span>
+          </button>
+          
+          <div class="d-flex gap-3 mt-3">
+            <button class="btn btn-outline-secondary flex-grow-1 social-btn" id="googleLogin">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 48 48">
+                <path fill="#FFC107" d="M43.611 20.083H42V20H24v8h11.303c-1.649 4.657-6.08 8-11.303 8-6.627 0-12-5.373-12-12s5.373-12 12-12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 12.955 4 4 12.955 4 24s8.955 20 20 20 20-8.955 20-20c0-1.341-.138-2.65-.389-3.917z"/>
+                <path fill="#FF3D00" d="m6.306 14.691 6.571 4.819C14.655 15.108 18.961 12 24 12c3.059 0 5.842 1.154 7.961 3.039l5.657-5.657C34.046 6.053 29.268 4 24 4 16.318 4 9.656 8.337 6.306 14.691z"/>
+                <path fill="#4CAF50" d="M24 44c5.166 0 9.86-1.977 13.409-5.192l-6.19-5.238A11.91 11.91 0 0 1 24 36c-5.202 0-9.619-3.317-11.283-7.946l-6.522 5.025C9.505 39.556 16.227 44 24 44z"/>
+                <path fill="#1976D2" d="M43.611 20.083H42V20H24v8h11.303a12.04 12.04 0 0 1-4.087 5.571l.003-.002 6.19 5.238C36.971 39.205 44 34 44 24c0-1.341-.138-2.65-.389-3.917z"/>
+              </svg>
+              <span class="ms-2">Google</span>
+            </button>
+            <button class="btn btn-outline-secondary flex-grow-1 social-btn" id="twitterLogin">
+              <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="#1DA1F2" viewBox="0 0 16 16">
+                <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z"/>
+              </svg>
+              <span class="ms-2">Twitter</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="divider-container">
+          <div class="divider-line"></div>
+          <span class="divider-text">OR</span>
+          <div class="divider-line"></div>
+        </div>
+
+        <form id="loginForm" class="mt-4">
+          <div class="mb-3">
+            <label for="email" class="form-label">E-Mail Address</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter your email..." required>
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Password</label>
+            <div class="input-group">
+              <input type="password" class="form-control" id="password" placeholder="••••••••••" required>
+              <button class="btn btn-outline-secondary toggle-password" type="button">
+                <i class="bi bi-eye"></i>
+              </button>
+            </div>
+          </div>
+          <div class="d-flex justify-content-between align-items-center mb-4">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="rememberMe">
+              <label class="form-check-label" for="rememberMe">
+                Remember me
+              </label>
+            </div>
+            <a href="#" class="forgot-password" id="forgotPassword">Forgot password?</a>
+          </div>
+          <button type="submit" class="btn btn-primary w-100 py-2">Sign in</button>
+        </form>
+
+        <div class="text-center mt-4">
+          <p class="mb-0">Don't have an account yet? <a href="#" id="signUpLink">Sign Up</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Bootstrap 5.3 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Bootstrap 5.3 CSS -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Footer -->
     <footer>
@@ -458,17 +821,17 @@
                         <div class="logo-circle">
                             <i class="fas fa-microchip"></i>
                         </div>
-                        <h4 class="ms-2 mb-0">TECH SOLUTIONS</h4>
+                        <h4 class="ms-2 mb-0">EDGETECH SOLUTIONS</h4>
                     </div>
                     <p>Providing innovative technology services and solutions for businesses of all sizes. Our team of experts is dedicated to helping you succeed in the digital world.</p>
                 </div>
                 <div class="col-lg-2 col-md-4 mb-4 footer-links">
                     <h5>Services</h5>
                     <ul>
-                        <li><a href="#">IT Consulting</a></li>
-                        <li><a href="#">Cloud Solutions</a></li>
-                        <li><a href="#">Cybersecurity</a></li>
-                        <li><a href="#">Software Development</a></li>
+                        <li><a href="#" data-bs-toggle="modal" data-bs-target="#consultingModal">IT Consulting</a></li>
+                        <li><a href="#" data-bs-toggle="modal" data-bs-target="#cloudModal">Cloud Solutions</a></li>
+                        <li><a href="#" data-bs-toggle="modal" data-bs-target="#securityModal">Cybersecurity</a></li>
+                        <li><a href="#" data-bs-toggle="modal" data-bs-target="#softwareModal">Software Development</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-2 col-md-4 mb-4 footer-links">
@@ -542,5 +905,217 @@
             player.playVideo();
         });
     </script>
+
+<!-- Firebase core setup -->
+<script type="module">
+    // Import the functions you need from the SDKs you need
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-analytics.js";
+    
+    // Your web app's Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyBs-rGXV2KeWB06c-OCaYZZIGqI0TFjsvI",
+      authDomain: "edgetech-c66ee.firebaseapp.com",
+      projectId: "edgetech-c66ee",
+      storageBucket: "edgetech-c66ee.firebasestorage.app",
+      messagingSenderId: "1088254012372",
+      appId: "1:1088254012372:web:5ae8349a7ec095f8800441",
+      measurementId: "G-H7YZ98N22F"
+    };
+    
+    // Initialize Firebase
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+    
+    // Make app available globally to be used in auth script
+    window.firebaseApp = app;
+  </script>
+  
+  <!-- Firebase Authentication Script -->
+  <script type="module">
+    // Firebase Authentication JS goes here
+// Import Firebase auth
+import { getAuth, createUserWithEmailAndPassword, signInWithEmailAndPassword, signInWithPopup, GoogleAuthProvider, TwitterAuthProvider, sendPasswordResetEmail, onAuthStateChanged, signOut } from "https://www.gstatic.com/firebasejs/11.6.0/firebase-auth.js";
+
+// Initialize Firebase Auth
+const auth = getAuth();
+const googleProvider = new GoogleAuthProvider();
+const twitterProvider = new TwitterAuthProvider();
+
+// DOM Elements
+const loginForm = document.getElementById('loginForm');
+const emailInput = document.getElementById('email');
+const passwordInput = document.getElementById('password');
+const togglePasswordBtn = document.querySelector('.toggle-password');
+const forgotPasswordLink = document.getElementById('forgotPassword');
+const signUpLink = document.getElementById('signUpLink');
+const googleLoginBtn = document.getElementById('googleLogin');
+const twitterLoginBtn = document.getElementById('twitterLogin');
+const appleLoginBtn = document.getElementById('appleLogin');
+
+// Toggle password visibility
+togglePasswordBtn.addEventListener('click', function () {
+  const type = passwordInput.getAttribute('type') === 'password' ? 'text' : 'password';
+  passwordInput.setAttribute('type', type);
+  
+  // Toggle eye icon
+  const icon = this.querySelector('i');
+  icon.classList.toggle('bi-eye');
+  icon.classList.toggle('bi-eye-slash');
+});
+
+// Email/Password Login
+loginForm.addEventListener('submit', async (e) => {
+  e.preventDefault();
+  
+  const email = emailInput.value;
+  const password = passwordInput.value;
+  
+  try {
+    const userCredential = await signInWithEmailAndPassword(auth, email, password);
+    const user = userCredential.user;
+    console.log('User logged in:', user);
+    
+    // Close modal after successful login
+    const loginModal = bootstrap.Modal.getInstance(document.getElementById('loginModal'));
+    loginModal.hide();
+    
+    // Show success message
+    showAlert('Successfully logged in!', 'success');
+    
+    // Redirect or update UI accordingly
+    // window.location.href = 'dashboard.html'; // Uncomment if you want to redirect
+  } catch (error) {
+    console.error('Login error:', error.code, error.message);
+    showAlert(error.message, 'danger');
+  }
+});
+
+// Google Sign-In
+googleLoginBtn.addEventListener('click', async () => {
+  try {
+    const result = await signInWithPopup(auth, googleProvider);
+    const user = result.user;
+    console.log('Google user:', user);
+    
+    // Close modal after successful login
+    const loginModal = bootstrap.Modal.getInstance(document.getElementById('loginModal'));
+    loginModal.hide();
+    
+    showAlert('Successfully logged in with Google!', 'success');
+    
+    // Redirect or update UI accordingly
+  } catch (error) {
+    console.error('Google signin error:', error);
+    showAlert(error.message, 'danger');
+  }
+});
+
+// Twitter Sign-In
+twitterLoginBtn.addEventListener('click', async () => {
+  try {
+    const result = await signInWithPopup(auth, twitterProvider);
+    const user = result.user;
+    console.log('Twitter user:', user);
+    
+    // Close modal after successful login
+    const loginModal = bootstrap.Modal.getInstance(document.getElementById('loginModal'));
+    loginModal.hide();
+    
+    showAlert('Successfully logged in with Twitter!', 'success');
+    
+    // Redirect or update UI accordingly
+  } catch (error) {
+    console.error('Twitter signin error:', error);
+    showAlert(error.message, 'danger');
+  }
+});
+
+// Apple Sign-In (placeholder - would need additional setup)
+appleLoginBtn.addEventListener('click', () => {
+  alert('Apple Sign In requires additional setup with Apple Developer account');
+});
+
+// Forgot Password
+forgotPasswordLink.addEventListener('click', async (e) => {
+  e.preventDefault();
+  
+  const email = prompt('Please enter your email to reset your password');
+  
+  if (email) {
+    try {
+      await sendPasswordResetEmail(auth, email);
+      showAlert('Password reset email sent! Check your inbox.', 'info');
+    } catch (error) {
+      console.error('Password reset error:', error);
+      showAlert(error.message, 'danger');
+    }
+  }
+});
+
+// Sign Up Link
+signUpLink.addEventListener('click', (e) => {
+  e.preventDefault();
+  
+  // Add your sign up logic here
+  // For example, you could show a different modal with sign up form
+  // or redirect to a signup page
+  alert('Sign up functionality to be implemented');
+});
+
+// Helper function to show alerts
+function showAlert(message, type) {
+  const alertContainer = document.createElement('div');
+  alertContainer.className = `alert alert-${type} alert-dismissible fade show`;
+  alertContainer.setAttribute('role', 'alert');
+  alertContainer.innerHTML = `
+    ${message}
+    <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+  `;
+  
+  // Add alert to page
+  document.body.insertBefore(alertContainer, document.body.firstChild);
+  
+  // Auto dismiss after 5 seconds
+  setTimeout(() => {
+    const bsAlert = new bootstrap.Alert(alertContainer);
+    bsAlert.close();
+  }, 5000);
+}
+
+// Check auth state
+onAuthStateChanged(auth, (user) => {
+  if (user) {
+    // User is signed in
+    console.log('User is signed in:', user);
+    
+    // Update UI for logged in user
+    // For example, show a logout button, user profile, etc.
+  } else {
+    // User is signed out
+    console.log('User is signed out');
+    
+    // Update UI for logged out user
+  }
+});
+
+// Logout function (to be called from logout button)
+function logoutUser() {
+  signOut(auth).then(() => {
+    // Sign-out successful
+    showAlert('Successfully logged out!', 'success');
+    
+    // Update UI accordingly
+  }).catch((error) => {
+    // An error happened
+    console.error('Logout error:', error);
+    showAlert(error.message, 'danger');
+  });
+}
+
+// Export logout function for use in other scripts
+window.logoutUser = logoutUser;
+  </script>
+
 </body>
 </html>
